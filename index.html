@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>Learn Computer Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #F5F5F5; /* Light grayish background */
+      color: #333; /* Dark text for readability */
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #9C4DCC; /* Soft purple */
+      color: white;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      padding: 15px;
+      color: #333; /* Dark text for card */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #9C4DCC; /* Purple color for titles */
+    }
+
+    .card h3 {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #777; /* Gray for the subtitle */
+    }
+
+    /* Topic-specific border colors */
+    .core-foundations { border: 2px solid #9C4DCC; }
+    .systems-architecture { border: 2px solid #8E24AA; }
+    .software-development { border: 2px solid #7B1FA2; }
+    .databases { border: 2px solid #6A1B9A; }
+    .web-app-development { border: 2px solid #9C27B0; }
+    .security { border: 2px solid #D500F9; }
+    .ai-ml { border: 2px solid #AB47BC; }
+    .advanced-computing { border: 2px solid #7E57C2; }
+    .emerging-technologies { border: 2px solid #8E24AA; }
+    .specialized-fields { border: 2px solid #9C27B0; }
+    .advanced-systems { border: 2px solid #8E24AA; }
+    .interdisciplinary { border: 2px solid #6A1B9A; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learn Computer Science</h1>
+  </header>
+
+  <div class="grid">
+    <!-- Core Foundations -->
+    <div class="card core-foundations" onclick="goToPage('computational_thinking.html')">
+      <h2>Computational Thinking</h2>
+      <h3>Core Foundations</h3>
+    </div>
+    <div class="card core-foundations" onclick="goToPage('algorithms.html')">
+      <h2>Algorithms</h2>
+      <h3>Core Foundations</h3>
+    </div>
+    <div class="card core-foundations" onclick="goToPage('data_structures.html')">
+      <h2>Data Structures</h2>
+      <h3>Core Foundations</h3>
+    </div>
+    <div class="card core-foundations" onclick="goToPage('programming.html')">
+      <h2>Programming</h2>
+      <h3>Core Foundations</h3>
+    </div>
+    <div class="card core-foundations" onclick="goToPage('computer_ethics.html')">
+      <h2>Computer Ethics</h2>
+      <h3>Core Foundations</h3>
+    </div>
+
+    <!-- Systems and Architecture -->
+    <div class="card systems-architecture" onclick="goToPage('computer_architecture.html')">
+      <h2>Computer Architecture</h2>
+      <h3>Systems and Architecture</h3>
+    </div>
+    <div class="card systems-architecture" onclick="goToPage('operating_systems.html')">
+      <h2>Operating Systems</h2>
+      <h3>Systems and Architecture</h3>
+    </div>
+    <div class="card systems-architecture" onclick="goToPage('networking.html')">
+      <h2>Networking</h2>
+      <h3>Systems and Architecture</h3>
+    </div>
+    <div class="card systems-architecture" onclick="goToPage('parallel_computing.html')">
+      <h2>Parallel Computing</h2>
+      <h3>Systems and Architecture</h3>
+    </div>
+    <div class="card systems-architecture" onclick="goToPage('distributed_systems.html')">
+      <h2>Distributed Systems</h2>
+      <h3>Systems and Architecture</h3>
+    </div>
+
+    <!-- Software Development -->
+    <div class="card software-development" onclick="goToPage('software_engineering.html')">
+      <h2>Software Engineering</h2>
+      <h3>Software Development</h3>
+    </div>
+    <div class="card software-development" onclick="goToPage('software_testing.html')">
+      <h2>Software Testing</h2>
+      <h3>Software Development</h3>
+    </div>
+    <div class="card software-development" onclick="goToPage('software_patterns.html')">
+      <h2>Software Patterns</h2>
+      <h3>Software Development</h3>
+    </div>
+    <div class="card software-development" onclick="goToPage('compiler_design.html')">
+      <h2>Compiler Design</h2>
+      <h3>Software Development</h3>
+    </div>
+    <div class="card software-development" onclick="goToPage('compiler_optimization.html')">
+      <h2>Compiler Optimization</h2>
+      <h3>Software Development</h3>
+    </div>
+
+    <!-- Databases and Data Management -->
+    <div class="card databases" onclick="goToPage('databases.html')">
+      <h2>Databases</h2>
+      <h3>Databases and Data Management</h3>
+    </div>
+    <div class="card databases" onclick="goToPage('data_compression.html')">
+      <h2>Data Compression</h2>
+      <h3>Databases and Data Management</h3>
+    </div>
+    <div class="card databases" onclick="goToPage('data_mining.html')">
+      <h2>Data Mining</h2>
+      <h3>Databases and Data Management</h3>
+    </div>
+    <div class="card databases" onclick="goToPage('big_data.html')">
+      <h2>Big Data</h2>
+      <h3>Databases and Data Management</h3>
+    </div>
+    <div class="card databases" onclick="goToPage('data_lakes.html')">
+      <h2>Data Lakes</h2>
+      <h3>Databases and Data Management</h3>
+    </div>
+
+    <!-- Web and App Development -->
+    <div class="card web-app-development" onclick="goToPage('web_development.html')">
+      <h2>Web Development</h2>
+      <h3>Web and App Development</h3>
+    </div>
+    <div class="card web-app-development" onclick="goToPage('mobile_app_development.html')">
+      <h2>Mobile App Development</h2>
+      <h3>Web and App Development</h3>
+    </div>
+
+    <!-- Security and Cryptography -->
+    <div class="card security" onclick="goToPage('cybersecurity.html')">
+      <h2>Cybersecurity</h2>
+      <h3>Security and Cryptography</h3>
+    </div>
+    <div class="card security" onclick="goToPage('cryptography.html')">
+      <h2>Cryptography</h2>
+      <h3>Security and Cryptography</h3>
+    </div>
+    <div class="card security" onclick="goToPage('quantum_cryptography.html')">
+      <h2>Quantum Cryptography</h2>
+      <h3>Security and Cryptography</h3>
+    </div>
+    <div class="card security" onclick="goToPage('ethical_hacking.html')">
+      <h2>Ethical Hacking</h2>
+      <h3>Security and Cryptography</h3>
+    </div>
+
+    <!-- Artificial Intelligence and Machine Learning -->
+    <div class="card ai-ml" onclick="goToPage('artificial_intelligence.html')">
+      <h2>Artificial Intelligence</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+    <div class="card ai-ml" onclick="goToPage('machine_learning.html')">
+      <h2>Machine Learning</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+    <div class="card ai-ml" onclick="goToPage('neural_networks.html')">
+      <h2>Neural Networks</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+    <div class="card ai-ml" onclick="goToPage('nlp.html')">
+      <h2>Natural Language Processing</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+    <div class="card ai-ml" onclick="goToPage('explainable_ai.html')">
+      <h2>Explainable AI</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+    <div class="card ai-ml" onclick="goToPage('federated_learning.html')">
+      <h2>Federated Learning</h2>
+      <h3>AI and Machine Learning</h3>
+    </div>
+
+    <!-- Advanced Computing Concepts -->
+    <div class="card advanced-computing" onclick="goToPage('graph_theory.html')">
+      <h2>Graph Theory</h2>
+      <h3>Advanced Computing Concepts</h3>
+    </div>
+    <div class="card advanced-computing" onclick="goToPage('computational_complexity.html')">
+      <h2>Computational Complexity</h2>
+      <h3>Advanced Computing Concepts</h3>
+    </div>
+    <div class="card advanced-computing" onclick="goToPage('theory_of_computation.html')">
+      <h2>Theory of Computation</h2>
+      <h3>Advanced Computing Concepts</h3>
+    </div>
+    <div class="card advanced-computing" onclick="goToPage('quantum_computing.html')">
+      <h2>Quantum Computing</h2>
+      <h3>Advanced Computing Concepts</h3>
+    </div>
+    <div class="card advanced-computing" onclick="goToPage('genetic_algorithms.html')">
+      <h2>Genetic Algorithms</h2>
+      <h3>Advanced Computing Concepts</h3>
+    </div>
+
+    <!-- Emerging Technologies -->
+    <div class="card emerging-technologies" onclick="goToPage('iot.html')">
+      <h2>Internet of Things</h2>
+      <h3>Emerging Technologies</h3>
+    </div>
+    <div class="card emerging-technologies" onclick="goToPage('cloud_computing.html')">
+      <h2>Cloud Computing</h2>
+      <h3>Emerging Technologies</h3>
+    </div>
+    <div class="card emerging-technologies" onclick="goToPage('edge_computing.html')">
+      <h2>Edge Computing</h2>
+      <h3>Emerging Technologies</h3>
+    </div>
+    <div class="card emerging-technologies" onclick="goToPage('blockchain.html')">
+      <h2>Blockchain</h2>
+      <h3>Emerging Technologies</h3>
+    </div>
+
+    <!-- Specialized Fields -->
+    <div class="card specialized-fields" onclick="goToPage('hci.html')">
+      <h2>Human-Computer Interaction</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('computer_graphics.html')">
+      <h2>Computer Graphics</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('game_development.html')">
+      <h2>Game Development</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('vr.html')">
+      <h2>Virtual Reality</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('ar.html')">
+      <h2>Augmented Reality</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('bioinformatics.html')">
+      <h2>Bioinformatics</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('computational_biology.html')">
+      <h2>Computational Biology</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+    <div class="card specialized-fields" onclick="goToPage('computational_neuroscience.html')">
+      <h2>Computational Neuroscience</h2>
+      <h3>Specialized Fields</h3>
+    </div>
+
+    <!-- Advanced Systems and Applications -->
+    <div class="card advanced-systems" onclick="goToPage('embedded_systems.html')">
+      <h2>Embedded Systems</h2>
+      <h3>Advanced Systems and Applications</h3>
+    </div>
+    <div class="card advanced-systems" onclick="goToPage('real_time_systems.html')">
+      <h2>Real-Time Systems</h2>
+      <h3>Advanced Systems and Applications</h3>
+    </div>
+    <div class="card advanced-systems" onclick="goToPage('fault_tolerant_systems.html')">
+      <h2>Fault-Tolerant Systems</h2>
+      <h3>Advanced Systems and Applications</h3>
+    </div>
+    <div class="card advanced-systems" onclick="goToPage('temporal_databases.html')">
+      <h2>Temporal Databases</h2>
+      <h3>Advanced Systems and Applications</h3>
+    </div>
+    <div class="card advanced-systems" onclick="goToPage('spatial_computing.html')">
+      <h2>Spatial Computing</h2>
+      <h3>Advanced Systems and Applications</h3>
+    </div>
+
+    <!-- Interdisciplinary Applications -->
+    <div class="card interdisciplinary" onclick="goToPage('cognitive_computing.html')">
+      <h2>Cognitive Computing</h2>
+      <h3>Interdisciplinary Applications</h3>
+    </div>
+    <div class="card interdisciplinary" onclick="goToPage('social_network_analysis.html')">
+      <h2>Social Network Analysis</h2>
+      <h3>Interdisciplinary Applications</h3>
+    </div>
+    <div class="card interdisciplinary" onclick="goToPage('legal_informatics.html')">
+      <h2>Legal Informatics</h2>
+      <h3>Interdisciplinary Applications</h3>
+    </div>
+    <div class="card interdisciplinary" onclick="goToPage('digital_forensics.html')">
+      <h2>Digital Forensics</h2>
+      <h3>Interdisciplinary Applications</h3>
+    </div>
+  </div>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page; // Navigate to the specified page
+    }
+  </script>
+</body>
+</html>
